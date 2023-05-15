@@ -10,7 +10,7 @@ env:
   AWS_REGION: us-east-1
 
 jobs:
-  # Configure AWS access credentials 
+  # Configure AWS credentials 
   configure_aws_credentials:
     name: Configure AWS credentials
     runs-on: ubuntu-latest
@@ -18,6 +18,6 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1-node16
         with:
-          aws-access-key-id: ${{ env.AWS_ACCESS_KEY_ID}}
+          aws-access-key-id: ${{ env.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ env.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
