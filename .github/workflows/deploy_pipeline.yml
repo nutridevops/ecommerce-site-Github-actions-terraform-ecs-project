@@ -10,7 +10,7 @@ env:
   AWS_REGION: us-east-1
 
 jobs:
-  # Configure AWS credentials 
+  # Configure AWS access credentials 
   configure_aws_credentials:
     name: Configure AWS credentials
     runs-on: ubuntu-latest
