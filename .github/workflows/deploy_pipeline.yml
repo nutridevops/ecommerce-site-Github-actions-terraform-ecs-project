@@ -11,7 +11,7 @@ env:
   TERRAFORM_ACTION: apply
 
 jobs:
-  # Configure AWS credentials 
+  # Configure the AWS credentials 
   configure_aws_credentials:
     name: Configure AWS credentials
     runs-on: ubuntu-latest
